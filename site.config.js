@@ -19,7 +19,7 @@ const CONFIG = {
   // blog setting (required)
   blog: {
     title: "tony-log",
-    description: "welcome to morethan-log!",
+    description: "welcome to tony-log!",
     scheme: "dark", // 'light' | 'dark' | 'system'
   },
 
@@ -69,7 +69,7 @@ const CONFIG = {
     },
   },
   isProd: process.env.VERCEL_ENV === "production", // distinguish between development and production environment (ref: https://vercel.com/docs/environment-variables#system-environment-variables)
-  revalidateTime: 600, // revalidate time for [slug], index
+  revalidateTime: 300, // revalidate time for [slug], index
 }
 
 module.exports = { CONFIG }
