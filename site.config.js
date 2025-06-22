@@ -6,8 +6,8 @@ const CONFIG = {
     role: "AI Engineer",
     bio: "Develop intelligent, scalable, and maintainable software systems.",
     email: "tonytruong23305@gmail.com",
-    linkedin: "https://www.linkedin.com/in/dinhtruong-ng/",
-    github: "https://github.com/dinhtruongng",
+    linkedin: "dinhtruong-ng",
+    github: "dinhtruongng",
     instagram: "",
   },
   projects: [
@@ -69,7 +69,7 @@ const CONFIG = {
     },
   },
   isProd: process.env.VERCEL_ENV === "production", // distinguish between development and production environment (ref: https://vercel.com/docs/environment-variables#system-environment-variables)
-  revalidateTime: 21600 * 7, // revalidate time for [slug], index
+  revalidateTime: 600, // revalidate time for [slug], index
 }
 
 module.exports = { CONFIG }
